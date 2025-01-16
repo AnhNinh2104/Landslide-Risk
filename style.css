@@ -27,3 +27,13 @@ body {
     font-weight: bold;
     font-size: 14;
 }
+.location {
+    color: rgb(10, 90, 3);
+    font-weight: bold;
+    font-size: 14px;
+}
+.latlon {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 14px;
+}
