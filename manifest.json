@@ -8,12 +8,12 @@
   "icons": [  
     {  
       "src": "https://png.pngtree.com/png-vector/20220519/ourmid/pngtree-mountain-landslide-with-falling-rocks-png-image_4703797.png",  
-      "sizes": "192x192",  
+      "sizes": "360x360",  
       "type": "image/png"  
     },  
     {  
       "src": "https://png.pngtree.com/png-vector/20220519/ourmid/pngtree-mountain-landslide-with-falling-rocks-png-image_4703797.png",  
-      "sizes": "512x512",  
+      "sizes": "360x360",  
       "type": "image/png"  
     }  
   ],  
