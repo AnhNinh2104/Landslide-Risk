@@ -313,3 +313,55 @@ if ('serviceWorker' in navigator) {
             });  
     });  
 }
+document.querySelectorAll('.map-switch button').forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.stopPropagation();
+    });
+});
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+document.addEventListener('DOMContentLoaded', function () {
+    const popup = document.querySelector('.popup');
+    const openPopupButton = document.querySelector('.openPopup');
+    openPopupButton.addEventListener('click', () => {
+        if (popup.style.display === 'flex') {
+            popup.style.bottom = '-100%';
+            setTimeout(() => {
+                popup.style.display = 'none';
+            }, 300);
+        } else {
+            popup.style.display = 'flex';
+            setTimeout(() => {
+                popup.style.bottom = '0';
+            }, 50);
+        }
+    });
+    document.addEventListener('DOMContentLoaded', function () {
+        const openPopupButton = document.getElementById('openPopup');
+        if (openPopupButton && popup) {
+        }
+    });
+    const button = document.querySelector('.openPopup');
+    const tooltip = document.querySelector('.tooltip-text');
+
+    button.addEventListener('mouseenter', () => {
+    tooltip.style.visibility = 'visible';
+    tooltip.style.opacity = '1';
+    });
+
+    button.addEventListener('mouseleave', () => {
+    tooltip.style.visibility = 'hidden';
+    tooltip.style.opacity = '0';
+    });
+        document.querySelectorAll('#popupContent').forEach(content => {
+            content.addEventListener('click', (e) => {
+                e.stopPropagation();
+            });
+        });
+    });
+    document.querySelectorAll('.popup-button button').forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.stopPropagation();
+        });
+    });
